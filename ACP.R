@@ -1,9 +1,9 @@
 # PROJET
 
-station <- read.table("/Users/arnaudbascop/Desktop/station.txt", header=TRUE)
+station <- read.table("C:/Users/abascop/Documents/GitHub/regressionLineaire/station.txt", header=TRUE)
 
 # Statistiques descriptives
-#attach(station)
+# attach(station)
 head(station)
 dim(station)
 summary(station)
@@ -49,5 +49,12 @@ plot(res,axes=c(1,2),choice="cor")
 # du nuage projeté). Ceci nous permettra alors de caractériser les individus en fonction des variables.
 
 plot(res,axes=c(1,2),choice="ind")
+
+# y variable � expliquer : les ventes des stations services
+res <- lm(ventes~., data=station)
+summary(res)
+summary(ventes)
+
+step(res)
 
 
