@@ -3,7 +3,7 @@
 # DEVOIR MAISON 
 #
 #===============================================================================
-station <- read.table("H:/personnel/Modélisation statistique/regressionLineaire/station.txt", header=TRUE)
+station <- read.table("C:/Users/zoemi/OneDrive/Bureau/ENSC/2A/S7/06 - Modélisation Statistique/station.txt", header=TRUE)
 attach(station)
 
 plot(station)
