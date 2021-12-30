@@ -3,8 +3,10 @@
 # DEVOIR MAISON 
 #
 #===============================================================================
-station <- read.table("C:/Users/zoemi/OneDrive/Bureau/ENSC/2A/S7/06 - Modélisation Statistique/station.txt", header=TRUE)
+station <- read.table("C:/Users/zoemi/OneDrive/Bureau/ENSC/2A/S7/06 - Modélisation Statistique/regressionLineaire/station.txt", header=TRUE)
 attach(station)
+
+summary(station)
 
 plot(station)
 library(PCAmixdata)
